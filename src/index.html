@@ -1,0 +1,48 @@
+  
+/*
+                                                     __  __                        _                     
+                                                    |  \/  |   ___   _ __   _ __  (_)   __ _   _ __ ___  
+                                                    | |\/| |  / _ \ | '__| | '__| | |  / _` | | '_ ` _ \ 
+                                                    | |  | | |  __/ | |    | |    | | | (_| | | | | | | |
+                                                    |_|  |_|  \___| |_|    |_|    |_|  \__,_| |_| |_| |_|
+                                                    __        __         _             _                 
+                                                    \ \      / /   ___  | |__    ___  | |_    ___   _ __ 
+                                                     \ \ /\ / /   / _ \ | '_ \  / __| | __|  / _ \ | '__|
+                                                      \ V  V /   |  __/ | |_) | \__ \ | |_  |  __/ | |   
+                                                       \_/\_/     \___| |_.__/  |___/  \__|  \___| |_|   
+*/
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<style>
+	body{
+		margin: 0;
+		background-color: black;
+	}
+</style>
+<link rel = "icon" href = "https://github.com/parth-kabra/Shoot_To_Kill_Game/blob/main/assets/baseball-ball--v2.png" type = "image/x-icon"> 
+<title>Merriam-Webster</title>
+<div class="fixed text-white text-sm ml-2 mt-2 select-none"><span>Score: </span><span id="scoreEl">0</span></div>
+
+<div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+	<div class="max-w-md w-full p-6 bg-white text-center">
+		<h1 class="text-4xl font-bold leading-none" id="bigScoreEl">0</h1>
+		<p class="test-sm text-gray-700 mb-4">Points</p>
+		<span onclick="reset1()"><button class="bg-blue-500 text-white w-full py-3 rounded-full" id="startGameBtn" onclick="reset()">Start Game</button></span>
+	</div>
+</div>
+<canvas></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	function reset1(){
+		let res=0;
+		const id1=document.querySelector("#bigScoreEl")
+		id1.innerHTML=res
+	}
+	function reset(){
+		let score=0;
+		const id2=document.querySelector("#scoreEl")
+		id2.innerHTML=score
+	}
+</script>
+<script src="./index.js"></script>
