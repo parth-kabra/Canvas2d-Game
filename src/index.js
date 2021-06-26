@@ -185,7 +185,6 @@ function animate(){
 					//enemy.radius-=10;
 					score+=100
 					scoreEl.innerHTML = score
-					bigScoreEl.innerHTML=score
 					gsap.to(enemy,{radius : enemy.radius-10})
 					setTimeout(()=>{
 						//enemies.splice(index,1)
@@ -217,5 +216,5 @@ startGameBtn.addEventListener('click',()=>{
 	animate()
 	spawnEnemies()
 	modalEl.style.display='none'
-	score-=score
+	//score-=score
 })
