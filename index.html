@@ -1,0 +1,77 @@
+<!--
+                                                     __  __                        _                     
+                                                    |  \/  |   ___   _ __   _ __  (_)   __ _   _ __ ___  
+                                                    | |\/| |  / _ \ | '__| | '__| | |  / _` | | '_ ` _ \ 
+                                                    | |  | | |  __/ | |    | |    | | | (_| | | | | | | |
+                                                    |_|  |_|  \___| |_|    |_|    |_|  \__,_| |_| |_| |_|
+                                                    __        __         _             _                 
+                                                    \ \      / /   ___  | |__    ___  | |_    ___   _ __ 
+                                                     \ \ /\ / /   / _ \ | '_ \  / __| | __|  / _ \ | '__|
+                                                      \ V  V /   |  __/ | |_) | \__ \ | |_  |  __/ | |   
+                                                       \_/\_/     \___| |_.__/  |___/  \__|  \___| |_|   
+-->
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="icon" href="icon.png">
+<style>
+	@import url('http://fonts.cdnfonts.com/css/giantrobotarmy');
+	body{
+		margin: 0;
+		background-color: black;
+		font-family: 'GiantRobotArmy', sans-serif;
+
+	}
+	.box{
+		height: 50%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.text{
+		font-size: 1.3em;
+		padding: 0.3em;
+		width: 50%;
+		margin: 5px;
+	}
+	.text1{
+		margin-top: 10%;
+	}
+	button {
+  		color: white;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 30px !important;
+  		cursor: pointer;
+  		-webkit-transition-duration: 0.4s; /* Safari */
+  		transition-duration: 0.4s;
+	}
+	button:hover {
+  		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.box_{
+		box-shadow: 2px -1px 29px 0px rgba(69,69,69,0.75);
+		-webkit-box-shadow: 2px -1px 29px 0px rgba(69,69,69,0.75);
+		-moz-box-shadow: 2px -1px 29px 0px rgba(69,69,69,0.75);
+	}
+</style>
+
+<title>Silver Stone</title>
+<div class="fixed inset-0 flex items-center justify-center">
+	<div class="max-w-md w-full p-6 bg-white text-center box flex items-center justify-center  box_">
+		<h1 class="text-4xl font-bold leading-none">Silver Stone</h1>
+		<button class="bg-green-500 text1 text-white rounded-full text raise" onclick="play()">Play</button>
+		<button style="margin-top: 12px;" class="bg-blue-500 text-white rounded-full text raise" onclick="source()">Github</button>
+	</div>
+</div>
+<canvas></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	function play(){
+		window.open("./game.html","_self")
+	}
+	function source(){
+		window.open("https://www.github.com/parth-kabra/Shoot_To_Kill_Game")
+	}
+</script>
+<script src="./home.js"></script>
